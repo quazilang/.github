@@ -9,10 +9,10 @@ The organization develops and maintains the core language infrastructure, includ
 * **[`bootstrap`](https://github.com/quazilang/quazistrap):** Reference bootstrap compiler written in Rust, featuring semantic analysis, QZI bytecode execution, and x86_64 code generation.
 * **`quazi`:** Self-hosting compiler implementation and primary language repository.
 * **[`std`](https://github.com/quazilang/std):** Standard library providing memory management, system calls, runtime intrinsics, and I/O abstractions.
-* **`tree-sitter`:** Tree-sitter grammar specification for syntax highlighting, LSP integration, and editor tooling.
-* **`docs`:** Official language specification, architecture documentation, and usage guides.
+* **[`tree-sitter`](https://github.com/quazilang/tree-sitter):** Tree-sitter grammar specification for syntax highlighting, LSP integration, and editor tooling.
+* **[`docs`](https://github.com/quazilang/docs):** Official language specification, architecture documentation, and usage guides.
 
 ## Resources
 
-* **Website:** [quazilang.codeberg.page](https://quazilang.codeberg.page)
+* **Website:** [quazilang.github.io](https://quazilang.github.io)
 * **Codeberg Mirror:** [codeberg.org/quazilang](https://codeberg.org/quazilang)
