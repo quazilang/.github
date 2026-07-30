@@ -1,18 +1,31 @@
 # Quazi Programming Language
 
-Quazi is an independent, low-level systems programming language engineered for performance, strictness, and deterministic execution. 
+### This organization develops and maintains the entire Quazi programming language infrastructure.
 
-The organization develops and maintains the core language infrastructure, including the reference compiler (`quazistrap`), the custom bytecode ecosystem (QZI), and the standard library (`std`).
+**Quazilang** is a standalone, multi-level, high-performance, and memory-safe systems programming language that achieves full memory safety without requiring manual lifetime annotations or borrow-checker friction. Built around Whole-Program Analysis, Compilation, and Optimization, its intelligent analyzer traverses the call graph directly from the entry point, emitting bytecode exclusively for the precise code paths executed. Modules, standard library imports, and source files function header-style at compile time, eliminating bloat and unneeded dependencies. The entire compilation process produces a single unified object file—generated entirely in memory—which can be executed instantly via the LazyJIT compiler or compiled directly into a single, highly optimized native binary without intermediate runtime or LLVM overhead.
+
+## Hello world
+
+```quazi
+import std.io;
+
+fn main() i32 {
+    io.println("Hello, world!");
+    ret 0;
+}
+```
 
 ## Language Components
 
 * **[`bootstrap`](https://github.com/quazilang/quazistrap):** Reference bootstrap compiler written in Rust, featuring semantic analysis, QZI bytecode execution, and x86_64 code generation.
 * **`quazi`:** Self-hosting compiler implementation and primary language repository.
 * **[`std`](https://github.com/quazilang/std):** Standard library providing memory management, system calls, runtime intrinsics, and I/O abstractions.
-* **[`tree-sitter`](https://github.com/quazilang/tree-sitter):** Tree-sitter grammar specification for syntax highlighting, LSP integration, and editor tooling.
+* **`quazi-analyzer`:** Official Language Server Protocol (LSP) implementation providing code intelligence, diagnostics, and editor support.
+* **[`website`](https://github.com/quazilang/website):** Source code for the official Quazilang website ([quazilang.github.io](https://quazilang.github.io)).
 * **[`docs`](https://github.com/quazilang/docs):** Official language specification, architecture documentation, and usage guides.
+* **[`tree-sitter`](https://github.com/quazilang/tree-sitter):** Tree-sitter grammar specification for syntax highlighting, LSP integration, and editor tooling.
 
 ## Resources
 
 * **Website:** [quazilang.github.io](https://quazilang.github.io)
-* **Codeberg Mirror:** [codeberg.org/quazilang](https://codeberg.org/quazilang)
+* **Codeberg:** [codeberg.org/quazilang](https://codeberg.org/quazilang)
