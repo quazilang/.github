@@ -17,7 +17,7 @@ fn main() i32 {
 
 ## Language Components
 
-* **[`bootstrap`](https://github.com/quazilang/quazistrap):** Reference bootstrap compiler written in Rust.
+* **[`quazistrap`](https://github.com/quazilang/quazistrap):** Reference bootstrap compiler written in Rust.
 * **`quazi`:** Self-hosting compiler implementation and primary language repository.
 * **[`std`](https://github.com/quazilang/std):** Standard library providing memory management, system calls, runtime intrinsics, and I/O abstractions.
 * **`quazi-analyzer`:** Language Server Protocol (LSP) implementation providing code intelligence, diagnostics, and editor support.
